@@ -49,7 +49,9 @@
           <input type="button" class="btn1" name="" value="0" onclick="calculator.display.value += '0'">
           <input type="button" class="btn2" name="" value="." onclick="calculator.display.value += '.'">
           <input type="button" class="btn2" name="" value="del" onclick="calculator.display.value = (calculator.display.value).substring(0,(calculator.display.value.length)-1)">
-          <input type="button" class="btnequal" name="" value="=" onclick="calculator.result.value = eval(calculator.display.value)">
+          <input type="button" class="btnequal" name="" value="=" onclick="calculator.result.value = eval(calculator.display.value),
+          calculator.display.value = (calculator.result.value)
+          ">
           <br>
         </div>
 
